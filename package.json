@@ -19,8 +19,7 @@
     "pg": "^8.11.5"
   },
   "scripts": {
-    "start": "concurrently \"cd frontend && npm start\" \"cd backend && node app.js\"",
-    "build": "cd frontend && npm run build"
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend && node app.js\""
   },
   "browserslist": {
     "production": [
