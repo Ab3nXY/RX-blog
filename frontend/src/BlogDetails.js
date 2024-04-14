@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 const BlogDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://localhost:5000/api/blogs/' + id);
+    const { data: blog, error, isPending } = useFetch('/api/blogs/' + id);
     const history = useNavigate();
 
     const handleClick= () => {
-      fetch('http://localhost:5000/api/blogs/' + id, {
+      fetch('/api/blogs/' + id, {
         method: 'DELETE',
       }).then(() => {
         history('/');
