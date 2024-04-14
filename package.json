@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\"",
-    "build": "react-scripts build"
+    "build": "npm run build:frontend"
   },
   "browserslist": {
     "production": [
